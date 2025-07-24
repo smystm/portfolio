@@ -1,16 +1,16 @@
-'use client'
+import Section from '../ui/section'
+import TypewriterText from '../../lib/TypewriterText'
+import {RocketProg} from '../../lib/LottieWrapper'
+import Badges from '../custom/badges'
+import Title from '../custom/title'
+import LinkBtn from '../custom/linkBtn'
+import IconBtn from '../custom/iconBtn'
 
-import TypewriterText from '../librarys/TypewriterText'
-import {RocketProg} from '../librarys/LottieWrapper'
-import Badges from '../Badges'
-import Button from '../Button'
-import IconBtn from '../IconBtn'
 
 export default function  HeroSection() {
   return (
     <>
-      <section className='HeroSection w-full max-w-[1440px] mx-auto min-h-screen flex flex-col md:flex-row-reverse items-center justify-center
-      h-screen md:justify-between gap-4 px-[5%] sm:px-6 lg:px-[5%]'>
+      <Section className="HeroSection max-w-[1440px] h-screen">
         <div className='w-full lg:w-1/2 flex flex-col space-y-3 sm:space-y-6 text-right md:text-right order-1'>
           <div className='flex flex-wrap gap-2'>
             <Badges className={`flex gap-2 bg-black/40 backdrop-blur-xl sm:py-2.5`} classText='bg-gradient-to-l from-[#6366f1] to-[#a855f7] text-transparent bg-clip-text text-[.5rem] sm:text-[.9rem] font-medium' title='همین الان سفارش بده' isBgradient={true}>
@@ -18,11 +18,7 @@ export default function  HeroSection() {
             </Badges>
           </div>      
           <div className='space-y-1'>
-            <h1 className='font-bold text-3xl sm:text-4xl lg:text-5xl text-[#111827] dark:text-white'>
-              <span className='relative inline-block bg-gradient-to-l from-[#ffffff] to-[#f9f9f9] bg-clip-text text-transparent'>توسعه دهنده </span>
-              <br />
-              <span className='relative inline-block bg-gradient-to-l from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent mt-2'>فرانت اند </span>
-            </h1>               
+            <Title topTtl={'توسعه دهنده'} subTtl={'فرانت اند'}></Title>             
           </div>
           <div className='text-right text-sm sm:text-md md:text-lg lg:text-xl text-[#111827] dark:text-gray-300'>
             <TypewriterText 
@@ -47,12 +43,12 @@ export default function  HeroSection() {
             <Badges className={`english-font hidden bg-white/5 backdrop-blur-sm hover:bg-white/10`} title='React'></Badges>
           </div>
           <div className='flex flex-row justify-start gap-3'>
-              <Button titleBtn="نمونه کارها">
+              <LinkBtn titleBtn="نمونه کارها" isgradient={true} href="/project">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link w-4 h-4 group-hover:translate-x-[-.25rem] transition-all duration-300"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-              </Button>
-              <Button titleBtn="سفارش سایت">
+              </LinkBtn>
+              <LinkBtn titleBtn="سفارش سایت" isgradient={true}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail w-4 h-4 group-hover:translate-x-[-.25rem] transition-all duration-300"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-              </Button>
+              </LinkBtn>
           </div>
           <div className="flex justify-start items-center gap-3">
             <IconBtn linkIcon='#'>
@@ -69,7 +65,7 @@ export default function  HeroSection() {
         <div className='w-full lg:w-1/2 flex justify-end'>
           <RocketProg/>
         </div>
-      </section>
+      </Section>
     </>
   )
 }

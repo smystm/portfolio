@@ -1,4 +1,4 @@
-import Bgradient from "./Bgradient"
+import Bgradient from "../ui/bgradient"
 import { ReactNode } from "react"
 
 type props = {
@@ -10,7 +10,7 @@ export default function IconBtn({children , linkIcon}: props) {
   return (
     <a href={`${linkIcon}`} target="_blank">
         <button className="relative group cursor-pointer p-3">
-            <Bgradient className={`from-[#4f52c9] to-[#8644c5] rounded-xl`}></Bgradient>
+            <Bgradient className={`from-[#4f52c9] to-[#8644c5] rounded-xl blur opacity-30`}></Bgradient>
             <div className="flex justify-center items-center bg-black/50 backdrop-blur-xl rounded-xl border border-white/10 p-2 group-hover:border-white/20 transition-all duration-300">
                 {children}
             </div>
