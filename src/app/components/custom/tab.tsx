@@ -23,7 +23,7 @@ function TabLable({id, txtSpan, children}: propsLbl) {
   return (
     <label className="flex justify-center cursor-pointer rounded-2xl flex-col text-center items-center py-6.5 px-4 focus:outline-none peer-checked:border-transparent peer-checked:bg-[#2c40ff26] peer-checked:text-[#a78bfa] transition-all duration-300 ease-in-out" htmlFor={id}>
         {children}
-        <span className="text-gray-200">{txtSpan}</span> 
+        <span className="text-xs sm:text-sm md:text-md lg:text-lg text-gray-200">{txtSpan}</span> 
     </label>
   )
 }

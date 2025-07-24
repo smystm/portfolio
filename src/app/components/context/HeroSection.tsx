@@ -10,7 +10,7 @@ import IconBtn from '../custom/iconBtn'
 export default function  HeroSection() {
   return (
     <>
-      <Section className="HeroSection max-w-[1440px] h-screen">
+      <Section className="HeroSection max-w-[1440px]">
         <div className='w-full lg:w-1/2 flex flex-col space-y-3 sm:space-y-6 text-right md:text-right order-1'>
           <div className='flex flex-wrap gap-2'>
             <Badges className={`flex gap-2 bg-black/40 backdrop-blur-xl sm:py-2.5`} classText='bg-gradient-to-l from-[#6366f1] to-[#a855f7] text-transparent bg-clip-text text-[.5rem] sm:text-[.9rem] font-medium' title='همین الان سفارش بده' isBgradient={true}>
@@ -62,7 +62,7 @@ export default function  HeroSection() {
             </IconBtn>
           </div>
         </div>
-        <div className='w-full lg:w-1/2 flex justify-end'>
+        <div className='w-full lg:w-1/2 flex justify-center md:justify-end '>
           <RocketProg/>
         </div>
       </Section>

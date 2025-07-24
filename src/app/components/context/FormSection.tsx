@@ -4,7 +4,7 @@ import Section from "../ui/section"
 
 export default function NextSec() {
   return (
-    <Section className="IntroSection w-[1640px] h-auto">
+    <Section className="IntroSection w-[1640px]">
         <div className="w-full flex flex-col space-y-6 gap-3">
           <Ttlsec ttl="تماس با ما" desc="سوالی دارید؟ پیامی بفرستید تا در اسرع وقت با شما در ارتباط باشیم" classDesc="desc text-center leading-6" />
           <div className="flex flex-row justify-center items-center gap-3">
