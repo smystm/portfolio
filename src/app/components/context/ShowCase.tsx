@@ -8,7 +8,7 @@ import { CertificatesTpl, Certificates } from "../custom/certificates"
 
 export default function ShowCase() {
   return (
-    <Section className="IntroSection w-[1640px] ">
+    <Section className="IntroSection w-[1640px] " id="showcase">
         <div className="w-full flex flex-col space-y-3 gap-3 mb-350 sm:mb-380 lg:mb-135">
           <Ttlsec classDesc="desc text-center leading-6" ttl="کارهای تیم ما" desc="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم ">
           </Ttlsec>

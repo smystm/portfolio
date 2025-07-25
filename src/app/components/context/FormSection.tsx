@@ -4,11 +4,11 @@ import Section from "../ui/section"
 
 export default function NextSec() {
   return (
-    <Section className="IntroSection w-[1640px]">
+    <Section className="IntroSection w-[1640px]" id="contact">
         <div className="w-full flex flex-col space-y-6 gap-3">
           <Ttlsec ttl="تماس با ما" desc="سوالی دارید؟ پیامی بفرستید تا در اسرع وقت با شما در ارتباط باشیم" classDesc="desc text-center leading-6" />
           <div className="flex flex-row justify-center items-center gap-3">
-            <div className="flex w-[400px] md:w-1/3 lg:w-2/5 items-center justify-center gap-3 p-8 rounded-2xl bg-white/5">
+            <div className="flex w-full sm:w-4/5 md:w-7/10 lg:w-3/5 xl:w-3/5 2xl:w-2/5 items-center justify-center gap-3 p-8 rounded-2xl bg-white/5">
               <div className="w-full flex flex-col gap-2 px-12 py-6 rounded-2xl bg-white/5">
                 <FormTtl/>
                 <Form>

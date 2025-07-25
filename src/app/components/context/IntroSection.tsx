@@ -5,7 +5,7 @@ import LinkBtn from "../custom/linkBtn"
 
 export default function IntroSection() {
   return (
-    <Section className="IntroSection w-[1640px] ">
+    <Section className="IntroSection w-[1640px] mt-6 md:mt-16" id="about">
         <div className="w-full flex flex-col space-y-3 gap-3">
           <Ttlsec 
             ttl="درباره ما"
