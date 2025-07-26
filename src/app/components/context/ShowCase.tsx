@@ -5,12 +5,13 @@ import Tabox from "../custom/tabox"
 import Tab,{TabLable, TabInput} from "../custom/tab"
 import { Project, ProjectTpl } from "../custom/project"
 import { CertificatesTpl, Certificates } from "../custom/certificates"
+import Button from "../ui/buttons"
 
 export default function ShowCase() {
   return (
-    <Section className="IntroSection w-[1640px] " id="showcase">
+    <Section className="IntroSection w-[1640px] py-32 md:py-24" id="showcase">
         <div className="w-full flex flex-col space-y-3 gap-3 mb-350 sm:mb-380 lg:mb-135">
-          <Ttlsec classDesc="desc text-center leading-6" ttl="کارهای تیم ما" desc="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم ">
+          <Ttlsec classDesc="desc text-center text-muted-foreground leading-relaxed" ttl="کارهای تیم ما" desc="ما یه تیم جمع‌و‌جور ولی کاربلدیم که چیزای زیادی واسه نشون دادن داریم! از تکنولوژی‌هایی که عاشقشونیم، تا مدارک و پروژه‌هایی که با وسواس ساختیم؛ همه اینجاست، یه نگاه بنداز شاید پروژه‌ی بعدی مال تو باشه!">
           </Ttlsec>
           <Tab>
             <ul className="mx-auto grid max-w-full w-full grid-cols-3 gap-x-5 px-8 py-3 border border-white/10 bg-white/2 rounded-3xl text-gray-300">
@@ -56,12 +57,15 @@ export default function ShowCase() {
                 <TabLable id="yesno" txtSpan="نمونه کار">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mb-2 w-5 h-5 transition-all duration-100"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                 </TabLable>
-                <Tabox className="w-[85vw]">
+                <Tabox className="w-[85vw] flex flex-col items-end gap-3">
                   <ProjectTpl>
                     <Project src="/imgs/1.png" title="پروژه 1" desc="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"></Project>
                     <Project src="/imgs/2.png" title="پروژه 2" desc="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"></Project>
                     <Project src="/imgs/3.png" title="پروژه 3" desc="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است"></Project>
                   </ProjectTpl>
+                  <Button name="مشاهده بیشتر" className="inline-flex gap-1.5 items-center px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/90 transition-all duration-300 hover:scale-95 active:scale-90 focus:outline-none focus:ring-2 focus:ring-purple-500/50 hover:cursor-pointer" choose="push" send="projects">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 rotate-180"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </Button>
                 </Tabox>
               </li>
             </ul>

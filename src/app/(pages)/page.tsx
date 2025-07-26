@@ -9,7 +9,7 @@ import { ScrollSpyManager } from '../components/ui/scrollSpyManager';
 export default function Page() {
   const ids = ['home', 'about', 'showcase', 'contact'];
   return (
-    <div className="page font-[dana] overflow-x-hidden max-w-full bg-[#F3F4F6] dark:bg-[#111827] dark:text-white scroll-smooth text-transparent">
+    <div className="page">
         <ScrollSpyManager ids={ids} />
         <Navbar/>
         <HeroSection/>

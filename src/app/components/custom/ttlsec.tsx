@@ -10,7 +10,7 @@ export default function Ttlsec({ttl, desc, classDesc}: props) {
         <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl bg-gradient-to-l from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
             {ttl}
         </h2>
-        <p className={`w-full sm:w-2/5 font-small text-sm md:text-md lg:text-lg ${classDesc}`}>
+        <p className={`w-full md:w-3/5 2xl:w-2/5 font-small text-sm md:text-md md:font-Normal lg:text-lg ${classDesc}`}>
             {desc}
         </p>
     </div>  

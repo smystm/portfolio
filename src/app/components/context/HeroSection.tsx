@@ -10,30 +10,34 @@ import IconBtn from '../custom/iconBtn'
 export default function  HeroSection() {
   return (
     <>
-      <Section className="HeroSection max-w-[1440px] mt-6 md:mt-16" id="home">
+      <Section className="HeroSection max-w-[1440px] md:flex-row-reverse mt-6 md:mt-16 py-16" id="home">
         <div className='w-full lg:w-1/2 flex flex-col space-y-3 sm:space-y-6 text-right md:text-right order-1'>
-          <div className='flex flex-wrap gap-2'>
-            <Badges className={`flex gap-2 bg-black/40 backdrop-blur-xl sm:py-2.5`} classText='bg-gradient-to-l from-[#6366f1] to-[#a855f7] text-transparent bg-clip-text text-[.5rem] sm:text-[.9rem] font-medium' title='همین الان سفارش بده' isBgradient={true}>
+          <div className='flex flex-wrap gap-2 mb-2'>
+            <Badges className={`flex gap-2 bg-black/40 backdrop-blur-xl sm:py-2.5`} classText='bg-gradient-to-l from-[#6366f1] to-[#a855f7] text-transparent bg-clip-text text-[.5rem] sm:text-[.9rem] font-medium' title='الان وقتشه سفارش بدی' isBgradient={true}>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hidden sm:block lucide lucide-sparkles sm:w-4 sm:h-4 w-2 h-2 text-blue-400"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
             </Badges>
           </div>      
           <div className='space-y-1'>
-            <Title topTtl={'توسعه دهنده'} subTtl={'فرانت اند'}></Title>             
+            <Title topTtl={'توسعه دهندگان'} subTtl={'فرانت اند'}></Title>             
           </div>
-          <div className='text-right text-sm sm:text-md md:text-lg lg:text-xl text-[#111827] dark:text-gray-300'>
+          <div className='text-right text-sm sm:text-md md:text-lg lg:text-xl text-gray-300'>
             <TypewriterText 
                 className={'transparent'}
-                words={['طراحی سایت شما با نوشتن کد از صفر تا صد', 'طراحی سایت سفارشی شما با استفاده از وردپرس و المنتور']}
+                words={['سایتتو برات با کد از پایه تا بالا می‌سازیم', 'یا طراحی یه سایت تر و تمیز با وردپرس و المنتور','خودت انتخاب کن، کدومش؟']}
                 loop={0}
                 cursorStyle={"|"}
-                typeSpeed={90}
-                deleteSpeed={40}
-                delaySpeed={1200}
+                typeSpeed={5}
+                deleteSpeed={0}
+                delaySpeed={600}
             />
           </div>
-          <p className='text-sm md:text-md lg:text-lg text-[#111827] dark:text-gray-300'>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است 
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است                
+          <p className='text-sm md:text-md lg:text-lg text-gray-300'>
+            ما یه تیم کوچک ولی با انگیزه‌ایم که روی طراحی و توسعه سایت‌های مدرن تمرکز داریم. از صفر تا صد پروژه‌تون همراه‌تون هستیم، چه یه کسب‌وکار نوپا باشین، چه یه برند در حال رشد. کیفیت، سادگی و سرعت برامون مهمه.
+            <br />
+            <br />
+            <span className='hidden sm:inline'>
+            راستی، همین سایتی که دارید الان می‌بینید و باهاش با ما در ارتباطید، با کلی عشق و همین تکنولوژی‌هایی که پایین آوردیم براتون ساخته شده!
+            </span>                
           </p>
           <div className='flex gap-3 flex-wrap justifty-start'>
             <Badges className={`english-font hidden bg-white/5 backdrop-blur-sm hover:bg-white/10`} title='Node.Js'></Badges>
@@ -43,10 +47,10 @@ export default function  HeroSection() {
             <Badges className={`english-font hidden bg-white/5 backdrop-blur-sm hover:bg-white/10`} title='React'></Badges>
           </div>
           <div className='flex flex-row justify-start gap-3'>
-              <LinkBtn titleBtn="نمونه کارها" isgradient={true} href="/project">
+              <LinkBtn titleBtn="نمونه کارها" isgradient={true} href="/projects">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link w-4 h-4 group-hover:translate-x-[-.25rem] transition-all duration-300"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
               </LinkBtn>
-              <LinkBtn titleBtn="سفارش سایت" isgradient={true}>
+              <LinkBtn titleBtn="سفارش سایت" isgradient={true} href="/order-site">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail w-4 h-4 group-hover:translate-x-[-.25rem] transition-all duration-300"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
               </LinkBtn>
           </div>

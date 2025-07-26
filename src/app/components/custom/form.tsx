@@ -10,7 +10,7 @@ function FormTtl() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-share2 lucide-share-2 w-10 h-10 text-[#6366f1] opacity-50"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>
             </h4>
             <p className="w-full font-small text-sm md:text-md lg:text-lg text-gray-400">
-                 ما در تلاشیم که به تمامی پیام های شما پاسخ دهیم لطفا شکیبا باشید
+                قول نمی‌دیم سریع‌ترین باشیم، ولی جواب می‌دیم حتما! :)
             </p>
         </div>
     )

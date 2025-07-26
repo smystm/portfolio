@@ -22,8 +22,8 @@ export default function BoxView({children,count,topText,subText,isBgradient=true
             </div>
             <div className="w-full flex justify-between px-2">
                 <div className="parents flex flex-col gap-1 justify-center">
-                    <p className="m-0 text-md text-gray-300">{topText}</p>
-                    <p className="m-0 text-xs text-gray-400">{subText}</p>
+                    <p className="m-0 text-md md:text-lg text-gray-200">{topText}</p>
+                    <p className="m-0 text-xs md:text-sm text-gray-400">{subText}</p>
                 </div>
                 <div className="svgBox flex items-end">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-up-right w-4 h-4 text-white/50 group-hover:text-white transition-colors duration-300 rotate-[-90deg]"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
