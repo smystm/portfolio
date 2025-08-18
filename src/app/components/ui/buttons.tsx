@@ -9,6 +9,7 @@ type props={
     choose: string
     send: string
     type?: any   
+    disabled?: boolean
 }
 
 function Clicked(source:string, choose:string){
@@ -24,9 +25,9 @@ function Clicked(source:string, choose:string){
     }
 }
 
-export default function Button({className, send, children, choose, type, name}:props) {
+export default function Button({className, send, children, choose, type, name , disabled}:props) {
   return (
-    <button className={className} type={type?? 'button'} onClick={Clicked(send,choose)}>
+    <button className={className} type={type?? 'button'} onClick={Clicked(send,choose)} disabled={disabled}>
         <span>{name}</span>
         {children}
     </button>

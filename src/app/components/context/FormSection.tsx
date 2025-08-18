@@ -5,11 +5,11 @@ import Section from "../ui/section"
 export default function NextSec() {
   return (
     <Section className="IntroSection w-[1640px] py-16" id="contact">
-        <div className="w-full flex flex-col space-y-6 gap-3">
+        <div className="flex flex-col w-full gap-3 space-y-6">
           <Ttlsec ttl="تماس با ما" desc="سوالی دارید؟ پیامی بفرستید تا در اسرع وقت با شما در ارتباط باشیم" classDesc="desc text-center leading-6" />
-          <div className="flex flex-row justify-center items-center gap-3">
-            <div className="flex w-full sm:w-4/5 md:w-7/10 lg:w-3/5 xl:w-3/5 2xl:w-2/5 items-center justify-center gap-3 p-8 rounded-2xl bg-white/5">
-              <div className="w-full flex flex-col gap-2 px-12 py-6 rounded-2xl bg-white/5">
+          <div className="flex flex-row items-center justify-center gap-3">
+            <div className="flex items-center justify-center w-full gap-3 p-2 md:p-8 sm:w-4/5 md:w-7/10 lg:w-3/5 xl:w-3/5 2xl:w-2/5 rounded-2xl bg-white/5">
+              <div className="flex flex-col w-full gap-2 px-4 py-6 md:px-12 rounded-2xl bg-white/5">
                 <FormTtl/>
                 <Form>
                   <FormInput id="name" placeHolder="نام و نام خانوادگی">
@@ -23,7 +23,7 @@ export default function NextSec() {
                   </FormInput>
                   <FormSubmit/>
                 </Form>
-                <hr className="text-white/20 my-4" />
+                <hr className="my-4 text-white/20" />
                 <FormContact />
               </div>
             </div>
